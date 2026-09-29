@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — RFID Tag Toolkit</title>
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <p><a href="index.html">← RFID Tag Toolkit</a></p>
+    <h1>Support</h1>
+
+    <h2>What you need</h2>
+    <ul>
+      <li>An iPhone with iOS 17 or later.</li>
+      <li>A Zebra RFD40 UHF RFID sled (RFD40 Standard, Premium or Premium Plus).</li>
+      <li>No reader yet? Turn on <strong>Demo mode</strong> in Settings to explore with sample data and a simulated reader.</li>
+    </ul>
+
+    <h2>Connecting the RFD40</h2>
+    <ol>
+      <li>Charge and turn on the sled.</li>
+      <li>Pair it in iOS <strong>Settings → Bluetooth</strong>.</li>
+      <li>Close the 123RFID app if it's open — only one app can use the reader at a time.</li>
+      <li>Open RFID Tag Toolkit → <strong>Reader</strong> tab → <strong>Connect</strong>.</li>
+    </ol>
+
+    <h2>Frequently asked questions</h2>
+    <p><strong>Identify says several tags answered.</strong> Move other labels at least an arm's length away and hold the label flat against the front of the sled.</p>
+    <p><strong>My new labels all have the same EPC.</strong> That's normal for blank inlays. The app identifies each label by its TID and can give each sample a unique test EPC.</p>
+    <p><strong>What are test EPCs?</strong> SGTIN-96 numbers from the GS1 demonstration range (company prefix 952…), which never collide with real products. The item reference is the inlay number and the serial is the sample number.</p>
+    <p><strong>What is "reliable range"?</strong> The last distance before the first reading that wasn't solid (the tag answered in at least 80% of 250 ms slots of a 3-second reading), walking outward from the reader. "Absolute range" is the furthest distance with any read. The in-app help (Settings → How it's measured) explains the full method.</p>
+    <p><strong>How do I keep my data safe?</strong> Settings → Data → Back up now saves everything (including photos) to Files or AirDrop. Restore from the same screen.</p>
+    <p><strong>The app closed unexpectedly.</strong> On the next launch you'll be offered to share the diagnostic log; please attach it to an issue.</p>
+
+    <h2>Contact</h2>
+    <p>Report a problem or ask a question: <a href="https://github.com/tolgabalci/rfid-tag-toolkit-site/issues">open an issue on GitHub</a>. Please include your iPhone model, iOS version and the app version (Settings → About).</p>
+  </main>
+</body>
+</html>
