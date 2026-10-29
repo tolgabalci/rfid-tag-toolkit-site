@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Support — RFID Tag Toolkit</title>
+  <title>Support | RFID Tag Toolkit</title>
   <link rel="icon" href="icon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,30 +14,32 @@
 
     <h2>What you need</h2>
     <ul>
-      <li>An iPhone with iOS 17 or later.</li>
-      <li>A Zebra RFD40 UHF RFID sled (RFD40 Standard, Premium or Premium Plus).</li>
-      <li>No reader yet? Turn on <strong>Demo mode</strong> in Settings to explore with sample data and a simulated reader.</li>
+      <li>An iPhone with iOS 26 or later.</li>
+      <li>A Zebra RFD40 Premium or Premium Plus UHF RFID sled, including the RFD40-M. The RFD40 Standard has no Bluetooth, so it can't connect to an iPhone.</li>
+      <li>To measure distances without a tape: an Apple Watch Series 6 or later or an Apple Watch Ultra, with watchOS 26 or later, or a second iPhone, as the beacon beside the tag. The beacon and the iPhone with the sled need Ultra Wideband: iPhone 11 or later, except iPhone SE, 16e and 17e. The Apple Watch SE has no Ultra Wideband either.</li>
+      <li>No sled yet? Turn on <strong>Demo mode</strong> in Settings to explore with sample evaluations and a simulated sled.</li>
     </ul>
 
-    <h2>Connecting the RFD40</h2>
+    <h2>Connecting the sled</h2>
     <ol>
       <li>Charge and turn on the sled.</li>
       <li>Pair it in iOS <strong>Settings → Bluetooth</strong>.</li>
-      <li>Close the 123RFID app if it's open — only one app can use the reader at a time.</li>
-      <li>Open RFID Tag Toolkit → <strong>Reader</strong> tab → <strong>Connect</strong>.</li>
+      <li>Close the 123RFID app if it's open: only one app can use the sled at a time.</li>
+      <li>Open RFID Tag Toolkit and tap <strong>Connect</strong> on the <strong>Reader</strong> tab. A new sled with no region set asks for one first: choose the country you're in.</li>
     </ol>
 
     <h2>Frequently asked questions</h2>
     <p><strong>Identify says several tags answered.</strong> Move other labels at least an arm's length away and hold the label flat against the front of the sled.</p>
     <p><strong>My new labels all have the same EPC.</strong> That's normal for blank inlays. The app identifies each label by its TID and can give each sample a unique test EPC.</p>
-    <p><strong>What are test EPCs?</strong> SGTIN-96 numbers from the GS1 demonstration range (company prefix 952…), which never collide with real products. The item reference is the inlay number and the serial is the sample number.</p>
-    <p><strong>What is "reliable range"?</strong> The last distance before the first reading that wasn't solid (the tag answered in at least 80% of 250 ms slots of a 3-second reading), walking outward from the reader. "Absolute range" is the furthest distance with any read. The in-app help (Settings → How it's measured) explains the full method.</p>
-    <p><strong>How do I keep my data safe?</strong> Settings → Data → Back up now saves everything (including photos) to Files or AirDrop. Restore from the same screen.</p>
+    <p><strong>What are test EPCs?</strong> SGTIN-96 numbers from the GS1 demonstration range (company prefix 952), which never collide with real products. The item reference is the inlay number and the serial is the sample number.</p>
+    <p><strong>What is "reliable range"?</strong> The furthest distance where the label read solidly: it answered in at least 80% of the 250 ms slots of a reading (3 seconds at a tape mark, or the best 2 seconds at a mark you walk past). A weaker reading closer in is shown as a weak spot. "Absolute range" is the furthest distance with any read. In the app, Settings → Help explains the whole method.</p>
+    <p><strong>How do I measure distance without a tape?</strong> Use your Apple Watch, with RFID Tag Toolkit open on it, or a second iPhone with the app open at Reader → Distance beacon, as the beacon beside the tag. Choose it once in Settings → Distance beacon and calibrate each sled with a few trigger pulls at tape marks. Then pull the trigger at each mark, or choose Walk in a range test and just walk away from the tag.</p>
+    <p><strong>How do I keep my data safe?</strong> With iCloud sync on, your data stays the same on every iPhone signed in to your Apple Account, and a backup goes to iCloud Drive once a day. Settings → Data → Back up now saves everything, photos included, to Files or AirDrop. Restore from the same screen.</p>
     <p><strong>The app closed unexpectedly.</strong> On the next launch the app offers to email the diagnostic log to support. It helps a lot with finding the cause.</p>
 
     <h2>Contact</h2>
     <p>Problems, questions and ideas are all welcome at <a href="mailto:rfid.tag.toolkit@gmail.com">rfid.tag.toolkit@gmail.com</a>.</p>
-    <p>From the app, <strong>Settings → Help &amp; feedback → Report a problem</strong> writes the email for you, with the app version, your iPhone model, the reader model and the diagnostic log already attached. <strong>Send feedback or an idea</strong> does the same without the log.</p>
+    <p>From the app, <strong>Settings → Help &amp; feedback → Report a problem</strong> writes the email for you, with the app version, your iPhone model, the sled model and the diagnostic log already attached. <strong>Send feedback or an idea</strong> does the same without the log.</p>
   </main>
 </body>
 </html>

@@ -1,5 +1,5 @@
-# RFID Tag Toolkit — site
+# RFID Tag Toolkit site
 
-Public privacy policy and support pages for the RFID Tag Toolkit iOS app, served with GitHub Pages.
+The support page and privacy policy of the RFID Tag Toolkit iOS app, served with GitHub Pages.
 
-Questions or problems with the app: open an issue in this repository.
+Questions or problems with the app: rfid.tag.toolkit@gmail.com, or open an issue in this repository.
